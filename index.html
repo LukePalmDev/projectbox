@@ -1,1 +1,1003 @@
-<h1>Hello Project-Box</h1>
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Box | Universo Xbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="navbar">
+        <div class="container inner">
+          <a class="brand" href="#home" data-route="home">Project Box</a>
+          <nav class="nav-links">
+            <a href="#home" data-route="home">Home</a>
+            <a href="#xbox-original" data-route="xbox-original">Xbox Original</a>
+            <a href="#xbox-360" data-route="xbox-360">Xbox 360</a>
+            <a href="#xbox-one" data-route="xbox-one">Xbox One</a>
+            <a href="#xbox-series" data-route="xbox-series">Xbox Series</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="view-root"></main>
+      <footer id="footer-root" class="footer"></footer>
+    </div>
+
+    <noscript>
+      <style>
+        #view-root,
+        #footer-root {
+          display: none;
+        }
+        .noscript-message {
+          padding: 4rem 1.5rem;
+          text-align: center;
+          color: var(--color-text);
+          font-family: "Inter", system-ui, sans-serif;
+        }
+      </style>
+      <div class="noscript-message">
+        Project Box richiede JavaScript per funzionare correttamente. Attiva
+        JavaScript per esplorare l'archivio Xbox.
+      </div>
+    </noscript>
+
+    <template id="view-home">
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero-text">
+              <span class="highlight">Archivio interattivo</span>
+              <h1>
+                Esplora tutte le console Xbox<br />
+                in un'unica esperienza curata
+              </h1>
+              <p>
+                Project Box è un archivio digitale dedicato all'ecosistema Xbox.
+                Qui puoi scoprire ogni generazione, approfondire i modelli
+                speciali e trovare curiosità che hanno segnato la storia del
+                gaming targato Microsoft.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="#xbox-series" data-route="xbox-series"
+                  >Scopri l'ultima generazione</a
+                >
+                <a class="button secondary" href="#percorso"
+                  >Come nasce il progetto</a
+                >
+              </div>
+            </div>
+            <div class="hero-media">
+              <div class="callout">
+                <h3>Una collezione viva</h3>
+                <p>
+                  Aggiorniamo costantemente il catalogo con edizioni limitate,
+                  accessori e storie della community Xbox. Seguici nel viaggio.
+                </p>
+                <a class="button primary" href="#xbox-original" data-route="xbox-original"
+                  >Inizia dal principio</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="percorso">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">La nostra missione</span>
+              <h2>Un archivio ispirato al design, dedicato ai fan</h2>
+              <p>
+                Project Box nasce per offrire un'esperienza elegante nello stile
+                Apple ma con il cuore verde Xbox. Ogni pagina raccoglie
+                informazioni, timeline e modelli in modo chiaro e visivamente
+                immersivo.
+              </p>
+            </div>
+            <div class="card-grid">
+              <article class="card">
+                <h3>Ricerca curata</h3>
+                <p>
+                  Ogni generazione viene raccontata con schede dedicate,
+                  approfondimenti sulle revisioni hardware e curiosità sugli
+                  accessori storici.
+                </p>
+                <div class="tag-list">
+                  <span class="tag">Dati tecnici</span>
+                  <span class="tag">Storia</span>
+                  <span class="tag">Icone</span>
+                </div>
+              </article>
+              <article class="card">
+                <h3>Esperienza guidata</h3>
+                <p>
+                  Navigazione rapida tra le generazioni, con percorsi suggeriti
+                  e collegamenti diretti tra i modelli successivi e precedenti.
+                </p>
+                <div class="tag-list">
+                  <span class="tag">Timeline</span>
+                  <span class="tag">Comparazioni</span>
+                  <span class="tag">Edizioni speciali</span>
+                </div>
+              </article>
+              <article class="card">
+                <h3>Community first</h3>
+                <p>
+                  Spazio dedicato alle storie della community, eventi chiave e
+                  un archivio di spot e campagne che hanno segnato l'immaginario
+                  Xbox.
+                </p>
+                <div class="tag-list">
+                  <span class="tag">Community</span>
+                  <span class="tag">Marketing</span>
+                  <span class="tag">Curiosità</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Linee del tempo</span>
+              <h2>Quattro generazioni che hanno ridefinito il gioco</h2>
+              <p>
+                Dal 2001 a oggi, Xbox ha introdotto innovazioni hardware e
+                servizi che hanno cambiato il modo di giocare. Scopri la timeline
+                rapida di ogni generazione.
+              </p>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span>2001</span>
+                <h4>Xbox Original</h4>
+                <p>
+                  L'ingresso di Microsoft nel mondo console con un focus su
+                  potenza e servizi online pionieristici.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2005</span>
+                <h4>Xbox 360</h4>
+                <p>
+                  Marketplace, avatar e Kinect rivoluzionano l'intrattenimento
+                  domestico HD.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2013</span>
+                <h4>Xbox One</h4>
+                <p>
+                  TV, app, retrocompatibilità e un ecosistema unificato tra
+                  console e PC.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2020</span>
+                <h4>Xbox Series</h4>
+                <p>
+                  SSD ultra-rapido, Ray Tracing e Xbox Game Pass al centro
+                  di un'esperienza next-gen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Catalogo rapido</span>
+              <h2>Vai direttamente alla generazione che ami</h2>
+              <p>
+                Ogni pagina include schede dedicate ai sotto-modelli con
+                specifiche sintetiche e differenze principali per orientarti a
+                colpo d'occhio.
+              </p>
+            </div>
+            <div class="card-grid">
+              <article class="card">
+                <h3>Xbox Original</h3>
+                <p>
+                  L'inizio di tutto: controller Duke, XBL e design iconico verde
+                  neon.
+                </p>
+                <a class="button secondary" href="#xbox-original" data-route="xbox-original"
+                  >Vai alla pagina</a
+                >
+              </article>
+              <article class="card">
+                <h3>Xbox 360</h3>
+                <p>
+                  L'era HD con Marketplace, Kinect e innumerevoli edizioni
+                  speciali.
+                </p>
+                <a class="button secondary" href="#xbox-360" data-route="xbox-360"
+                  >Vai alla pagina</a
+                >
+              </article>
+              <article class="card">
+                <h3>Xbox One</h3>
+                <p>
+                  Dal modello originale a One X, con un focus su media e
+                  retrocompatibilità.
+                </p>
+                <a class="button secondary" href="#xbox-one" data-route="xbox-one"
+                  >Vai alla pagina</a
+                >
+              </article>
+              <article class="card">
+                <h3>Xbox Series</h3>
+                <p>
+                  Prestazioni next-gen tra Series X e S, con servizi cloud e
+                  Smart Delivery.
+                </p>
+                <a class="button secondary" href="#xbox-series" data-route="xbox-series"
+                  >Vai alla pagina</a
+                >
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div>© 2024 Project Box. Archivio indipendente dedicato al mondo Xbox.</div>
+          <div class="footer-links">
+            <a href="#percorso">Missione</a>
+            <a href="mailto:ciao@projectbox.it">Contatti</a>
+            <a href="https://www.xbox.com" target="_blank" rel="noreferrer"
+              >Xbox.com</a
+            >
+          </div>
+        </div>
+      </footer>
+    </template>
+
+    <template id="view-xbox-original">
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero-text">
+              <span class="highlight">2001 · La prima volta</span>
+              <h1>Xbox Original</h1>
+              <p>
+                La prima console Microsoft porta nel salotto di casa un hardware
+                PC-like, il servizio Xbox Live e un design che ha definito
+                l'identità visiva della piattaforma con il verde radioattivo e
+                il logo a X tridimensionale.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="#modelli">Esplora i modelli</a>
+                <a class="button secondary" href="#timeline">Timeline</a>
+              </div>
+            </div>
+            <div class="hero-media">
+              <div class="callout">
+                <h3>Icone indelebili</h3>
+                <p>
+                  Halo: Combat Evolved, il controller Duke e il Live con voce
+                  hanno reso l'esordio Xbox una dichiarazione di intenti.
+                </p>
+                <a
+                  class="button secondary"
+                  href="https://www.xbox.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Visita Xbox.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="timeline">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Pietre miliari</span>
+              <h2>Le tappe della prima generazione Xbox</h2>
+              <p>
+                Dalla presentazione al CES 2001 alle ultime edizioni Crystal, il
+                viaggio della prima Xbox è breve ma intenso.
+              </p>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span>Gennaio 2001</span>
+                <h4>Annuncio ufficiale</h4>
+                <p>
+                  Bill Gates e The Rock presentano la console al CES, mostrando
+                  un approccio PC alle console domestiche.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>Marzo 2002</span>
+                <h4>Lancio europeo</h4>
+                <p>
+                  Arriva in Europa con titoli come Halo e Project Gotham Racing,
+                  con prezzi aggressivi rispetto alla concorrenza.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>Novembre 2002</span>
+                <h4>Xbox Live</h4>
+                <p>
+                  Nasce Xbox Live, abbonamento annuale con headset incluso e
+                  matchmaking centralizzato.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2004-2005</span>
+                <h4>Edizioni speciali</h4>
+                <p>
+                  Crystal, Halo 2, Mountain Dew: la console sperimenta colori e
+                  materiali traslucidi che diventeranno ricercatissimi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="modelli">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Sotto-modelli</span>
+              <h2>Le principali revisioni hardware</h2>
+              <p>
+                Con poche ma significative revisioni, Xbox Original evolve per
+                ridurre peso, rumore e introdurre versioni speciali per i
+                collezionisti.
+              </p>
+            </div>
+            <div class="card-grid">
+              <article class="card">
+                <h3>Launch Model</h3>
+                <p>
+                  Il primo design con controller Duke e hard disk da 8 GB.
+                  Alimentatore interno e ventola rumorosa ma potente.
+                </p>
+                <ul class="spec-list">
+                  <li><span>CPU</span> Intel Pentium III 733 MHz</li>
+                  <li><span>GPU</span> nVidia NV2A 233 MHz</li>
+                  <li><span>Storage</span> HDD 8 GB</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Controller S Bundle</h3>
+                <p>
+                  Rivisitazione 2002 con il controller S più ergonomico e nuove
+                  revisioni della scheda madre (v1.1-v1.4).
+                </p>
+                <ul class="spec-list">
+                  <li><span>Controller</span> Controller S incluso</li>
+                  <li><span>Audio</span> Dolby Digital 5.1</li>
+                  <li><span>Storage</span> HDD 10 GB (alcune unità)</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>1.6 Revision</h3>
+                <p>
+                  Ultima revisione hardware con chipset video Focus/ Xcalibur e
+                  componenti più compatti per ridurre i costi.
+                </p>
+                <ul class="spec-list">
+                  <li><span>RAM</span> 64 MB DDR</li>
+                  <li><span>Video</span> Component fino a 480p/720p</li>
+                  <li><span>Extra</span> Nuova ventola più silenziosa</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Crystal Edition</h3>
+                <p>
+                  Scocca trasparente, controller coordinati e tiratura limitata
+                  per celebrare la maturità del brand.
+                </p>
+                <ul class="spec-list">
+                  <li><span>Colore</span> Scocca trasparente</li>
+                  <li><span>Accessori</span> Controller abbinati</li>
+                  <li><span>Rarità</span> Produzione limitata 2004</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div>© 2024 Project Box. Archivio indipendente dedicato al mondo Xbox.</div>
+          <div class="footer-links">
+            <a href="#timeline">Timeline</a>
+            <a href="#modelli">Modelli</a>
+            <a href="mailto:ciao@projectbox.it">Contatti</a>
+          </div>
+        </div>
+      </footer>
+    </template>
+
+    <template id="view-xbox-360">
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero-text">
+              <span class="highlight">2005 · High Definition</span>
+              <h1>Xbox 360</h1>
+              <p>
+                Xbox 360 porta il gioco in alta definizione, un marketplace
+                integrato e l'esplosione del multiplayer online, definendo gli
+                standard per l'industria.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="#modelli">Scopri i modelli</a>
+                <a class="button secondary" href="#servizi">Servizi</a>
+              </div>
+            </div>
+            <div class="hero-media">
+              <div class="callout">
+                <h3>Un ecosistema completo</h3>
+                <p>
+                  Marketplace, Xbox Live Arcade e Kinect trasformano Xbox 360 in
+                  un hub di intrattenimento e fitness casalingo.
+                </p>
+                <a class="button secondary" href="#timeline">Ripercorri la timeline</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="timeline">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Evoluzione rapida</span>
+              <h2>Un ciclo vitale lungo e ricco di revisioni</h2>
+              <p>
+                Xbox 360 attraversa tre design principali, correzioni hardware e
+                un supporto senza precedenti per edizioni limitate e bundle.
+              </p>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span>2005</span>
+                <h4>Modelli Core & Premium</h4>
+                <p>
+                  Lancio mondiale in tre ondate con opzioni senza HDD e bundle
+                  con disco da 20 GB e controller wireless.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2007-2008</span>
+                <h4>Elite & Jasper</h4>
+                <p>
+                  Case nero lucido, HDD 120 GB e chipset a 65 nm per ridurre il
+                  rischio di RROD.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2010</span>
+                <h4>Xbox 360 S</h4>
+                <p>
+                  Design più compatto, Wi-Fi integrato e porte dedicate a Kinect.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2013</span>
+                <h4>Xbox 360 E</h4>
+                <p>
+                  Restyling ispirato a Xbox One per accompagnare l'ultima fase
+                  della generazione.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="modelli">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Sotto-modelli</span>
+              <h2>Tutte le principali configurazioni</h2>
+              <p>
+                Abbiamo raccolto i modelli più significativi con focus su design,
+                storage e funzionalità esclusive.
+              </p>
+            </div>
+            <div class="card-grid">
+              <article class="card">
+                <h3>Core / Arcade</h3>
+                <p>
+                  Versioni entry-level senza HDD, pensate per un pubblico casual
+                  con memorie opzionali.
+                </p>
+                <ul class="spec-list">
+                  <li><span>Storage</span> Memory Unit 64-512 MB</li>
+                  <li><span>Colore</span> Bianco</li>
+                  <li><span>Controller</span> Cablato o wireless</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Premium / Pro</h3>
+                <p>
+                  Bundle con HDD 20-60 GB, cuffie Live e cavo component HD incluso
+                  nella confezione.
+                </p>
+                <ul class="spec-list">
+                  <li><span>Storage</span> HDD 20/60 GB</li>
+                  <li><span>Video</span> Component 1080i</li>
+                  <li><span>Extra</span> Cavo Ethernet incluso</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Elite</h3>
+                <p>
+                  Finitura nera, HDD da 120 GB e HDMI di serie. Considerata la
+                  risposta premium a PlayStation 3.
+                </p>
+                <ul class="spec-list">
+                  <li><span>Storage</span> HDD 120 GB</li>
+                  <li><span>Video</span> HDMI 1.2</li>
+                  <li><span>Extra</span> Headset e cavo HDMI</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Xbox 360 S</h3>
+                <p>
+                  Redesign compatto con Wi-Fi n integrato, alimentatore più
+                  efficiente e ventilazione migliorata.
+                </p>
+                <ul class="spec-list">
+                  <li><span>Storage</span> HDD 250 GB</li>
+                  <li><span>Connettività</span> Wi-Fi 802.11n</li>
+                  <li><span>Extra</span> Porta Kinect dedicata</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Xbox 360 E</h3>
+                <p>
+                  L'ultima revisione con design parallelepipedo e rumorosità
+                  ridotta, in bundle con Kinect.
+                </p>
+                <ul class="spec-list">
+                  <li><span>Storage</span> HDD 250/500 GB</li>
+                  <li><span>Audio</span> HDMI + Stereo</li>
+                  <li><span>Extra</span> Kinect incluso in molti bundle</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Edizioni speciali</h3>
+                <p>
+                  Halo Reach, Gears of War, Star Wars: console a tema con suoni
+                  dedicati e scocche personalizzate.
+                </p>
+                <ul class="spec-list">
+                  <li><span>Design</span> Artwork esclusivo</li>
+                  <li><span>Suoni</span> Avvio personalizzato</li>
+                  <li><span>Bundle</span> Controller coordinati</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="servizi">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Servizi iconici</span>
+              <h2>Live, Marketplace e Kinect</h2>
+              <p>
+                Xbox 360 ha consolidato il servizio Live introducendo messaggistica,
+                partite classificate, marketplace per DLC e l'esperienza Kinect.
+              </p>
+            </div>
+            <div class="card-grid">
+              <article class="card">
+                <h3>Xbox Live Gold</h3>
+                <p>
+                  Abbonamento con matchmaking, party chat, giochi gratis mensili
+                  e sconti esclusivi.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Marketplace</h3>
+                <p>
+                  DLC, demo e giochi Xbox Live Arcade che hanno aperto le porte
+                  agli indie su console.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Kinect</h3>
+                <p>
+                  Sensore di movimento full-body con esperienze fitness e party,
+                  protagonista del 2010.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div>© 2024 Project Box. Archivio indipendente dedicato al mondo Xbox.</div>
+          <div class="footer-links">
+            <a href="#timeline">Timeline</a>
+            <a href="#modelli">Modelli</a>
+            <a href="#servizi">Servizi</a>
+          </div>
+        </div>
+      </footer>
+    </template>
+
+    <template id="view-xbox-one">
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero-text">
+              <span class="highlight">2013 · All in One</span>
+              <h1>Xbox One</h1>
+              <p>
+                Xbox One unisce gaming, TV e app in un'unica piattaforma
+                multimediale, evolvendosi negli anni con potenza e design rivisti.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="#modelli">Scopri le revisioni</a>
+                <a class="button secondary" href="#ecosistema">Ecosistema</a>
+              </div>
+            </div>
+            <div class="hero-media">
+              <div class="callout">
+                <h3>Retrocompatibilità</h3>
+                <p>
+                  Xbox One introduce una retrocompatibilità profonda con Xbox 360
+                  e titoli Xbox Original, gettando le basi per l'approccio moderno
+                  di Microsoft.
+                </p>
+                <a class="button secondary" href="#timeline">Ripercorri la storia</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="timeline">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Roadmap</span>
+              <h2>Dall'esordio multimediale al focus gaming</h2>
+              <p>
+                Una generazione che ha saputo reinventarsi ascoltando la community
+                e potenziando l'hardware con versioni mid-gen.
+              </p>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span>2013</span>
+                <h4>Lancio con Kinect</h4>
+                <p>
+                  Xbox One arriva con Kinect 2.0 incluso, HDMI pass-through e
+                  focus TV/entertainment.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2014-2015</span>
+                <h4>Ascoltare i fan</h4>
+                <p>
+                  Introduzione dei bundle senza Kinect, aggiornamenti software e
+                  nuova UI basata su Windows 10.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2016</span>
+                <h4>Xbox One S</h4>
+                <p>
+                  Design più compatto, supporto 4K video e HDR per i giochi.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2017</span>
+                <h4>Xbox One X</h4>
+                <p>
+                  La console più potente al mondo al lancio: 6 TFLOPS, 12 GB GDDR5
+                  e gaming 4K nativo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="modelli">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Sotto-modelli</span>
+              <h2>Le tre fasi di Xbox One</h2>
+              <p>
+                Ogni revisione della famiglia Xbox One introduce miglioramenti
+                chiave per grafica, audio e forma.
+              </p>
+            </div>
+            <div class="card-grid">
+              <article class="card">
+                <h3>Xbox One (2013)</h3>
+                <p>
+                  Design a due tonalità, alimentatore esterno e Kinect integrato
+                  nel pacchetto.
+                </p>
+                <ul class="spec-list">
+                  <li><span>GPU</span> 1,31 TFLOPS</li>
+                  <li><span>Storage</span> HDD 500 GB</li>
+                  <li><span>Video</span> 1080p con upscaling</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Xbox One S</h3>
+                <p>
+                  Console snellita del 40%, alimentatore interno e supporto HDR,
+                  con lettore Blu-ray UHD.
+                </p>
+                <ul class="spec-list">
+                  <li><span>Storage</span> HDD 500 GB / 1 TB / 2 TB</li>
+                  <li><span>Video</span> 4K streaming + HDR10</li>
+                  <li><span>Extra</span> Controller Bluetooth</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Xbox One X</h3>
+                <p>
+                  Potenza estrema per il 4K nativo, raffreddamento a camera di
+                  vapore e memoria GDDR5.
+                </p>
+                <ul class="spec-list">
+                  <li><span>GPU</span> 6 TFLOPS</li>
+                  <li><span>RAM</span> 12 GB GDDR5</li>
+                  <li><span>Video</span> 4K nativo + supersampling</li>
+                </ul>
+              </article>
+              <article class="card">
+                <h3>Edizioni Limitate</h3>
+                <p>
+                  Project Scorpio, Cyberpunk 2077, Gears 5: design unici e numerati
+                  per i collezionisti.
+                </p>
+                <ul class="spec-list">
+                  <li><span>Design</span> Artwork e incisioni</li>
+                  <li><span>Extra</span> Stand verticale, codici DLC</li>
+                  <li><span>Rarità</span> Produzioni limitate</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="ecosistema">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Ecosistema</span>
+              <h2>Servizi e accessori chiave</h2>
+              <p>
+                Dalla retrocompatibilità alla personalizzazione del controller,
+                Xbox One ha creato le basi dell'attuale ecosistema Xbox.
+              </p>
+            </div>
+            <div class="card-grid">
+              <article class="card">
+                <h3>Xbox Game Pass</h3>
+                <p>
+                  Lanciato nel 2017, offre accesso illimitato a un catalogo in
+                  espansione con le esclusive first-party al day one.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Retrocompatibilità</h3>
+                <p>
+                  Supporto per centinaia di giochi Xbox 360 e Original con
+                  miglioramenti di performance e risoluzione.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Elite Controller</h3>
+                <p>
+                  Controller premium con componenti intercambiabili e personalizzazioni
+                  via app Xbox Accessories.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div>© 2024 Project Box. Archivio indipendente dedicato al mondo Xbox.</div>
+          <div class="footer-links">
+            <a href="#timeline">Timeline</a>
+            <a href="#modelli">Modelli</a>
+            <a href="#ecosistema">Ecosistema</a>
+          </div>
+        </div>
+      </footer>
+    </template>
+
+    <template id="view-xbox-series">
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero-text">
+              <span class="highlight">2020 · Power Your Dreams</span>
+              <h1>Xbox Series X|S</h1>
+              <p>
+                La quarta generazione introduce potenza next-gen, SSD ultraveloce
+                e un ecosistema che mette al centro il Game Pass e il cloud.
+              </p>
+              <div class="hero-actions">
+                <a class="button primary" href="#modelli">Confronta Series X e S</a>
+                <a class="button secondary" href="#features">Funzionalità</a>
+              </div>
+            </div>
+            <div class="hero-media">
+              <div class="callout">
+                <h3>Smart Delivery</h3>
+                <p>
+                  Aggiornamenti automatici alla versione migliore del gioco in
+                  base alla console in uso, senza costi aggiuntivi.
+                </p>
+                <a class="button secondary" href="#timeline">Scopri la timeline</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="timeline">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Timeline</span>
+              <h2>Dalla rivelazione 2019 al futuro cloud</h2>
+              <p>
+                Xbox Series X e S continuano ad evolversi con update software e
+                servizi che ampliano l'accesso al gaming.
+              </p>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span>2019</span>
+                <h4>Project Scarlett</h4>
+                <p>
+                  Phil Spencer presenta la visione next-gen all'E3, ponendo l'accento su velocità e immersione.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>Novembre 2020</span>
+                <h4>Lancio Series X|S</h4>
+                <p>
+                  Due console complementari: Series X per il 4K, Series S per la
+                  fruizione digitale accessibile.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2021</span>
+                <h4>FPS Boost</h4>
+                <p>
+                  Aggiornamenti retrocompatibili che raddoppiano il frame rate
+                  dei titoli delle generazioni precedenti.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <span>2022-2024</span>
+                <h4>Cloud & Game Pass</h4>
+                <p>
+                  Espansione di Xbox Cloud Gaming su TV e dispositivi mobile con
+                  l'ecosistema Game Pass Ultimate.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="modelli">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Sotto-modelli</span>
+              <h2>Series X vs Series S</h2>
+              <p>
+                Due proposte complementari che condividono la stessa generazione
+                di CPU ma puntano a target differenti per potenza e prezzo.
+              </p>
+            </div>
+            <div class="model-section">
+              <div class="model-highlight">
+                <div>
+                  <h3 class="highlight">Xbox Series X</h3>
+                  <h2 style="font-family: 'Bungee', cursive; font-size: 2.2rem; margin-bottom: 1rem;">
+                    Potenza assoluta
+                  </h2>
+                  <p>
+                    Design monolitico nero con ventola superiore e finitura verde
+                    interna. Pensata per 4K nativo e fino a 120 fps.
+                  </p>
+                </div>
+                <div class="specs">
+                  <ul class="spec-list">
+                    <li><span>GPU</span> 12 TFLOPS RDNA 2</li>
+                    <li><span>CPU</span> Zen 2 8 core 3.8 GHz</li>
+                    <li><span>Storage</span> SSD NVMe 1 TB</li>
+                    <li><span>Target</span> 4K / 120 fps</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="model-highlight">
+                <div>
+                  <h3 class="highlight">Xbox Series S</h3>
+                  <h2 style="font-family: 'Bungee', cursive; font-size: 2.2rem; margin-bottom: 1rem;">
+                    Minimal e digitale
+                  </h2>
+                  <p>
+                    Finitura bianca con griglia nera, dimensioni ridotte e focus
+                    sul digitale. Ideale per Game Pass e gaming 1440p.
+                  </p>
+                </div>
+                <div class="specs">
+                  <ul class="spec-list">
+                    <li><span>GPU</span> 4 TFLOPS RDNA 2</li>
+                    <li><span>CPU</span> Zen 2 8 core 3.6 GHz</li>
+                    <li><span>Storage</span> SSD NVMe 512 GB</li>
+                    <li><span>Target</span> 1440p / 120 fps</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="features">
+          <div class="container">
+            <div class="section-header">
+              <span class="highlight">Feature chiave</span>
+              <h2>Innovazioni dell'era Series</h2>
+              <p>
+                L'architettura Velocity, il Quick Resume e la retrocompatibilità
+                spingono la generazione verso servizi sempre attivi.
+              </p>
+            </div>
+            <div class="card-grid">
+              <article class="card">
+                <h3>Xbox Velocity Architecture</h3>
+                <p>
+                  Integrazione di SSD NVMe, decompressione hardware e streaming di
+                  asset per caricamenti istantanei.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Quick Resume</h3>
+                <p>
+                  Passa da un gioco all'altro in pochi secondi mantenendo la
+                  sessione sospesa in memoria.
+                </p>
+              </article>
+              <article class="card">
+                <h3>Cloud Gaming</h3>
+                <p>
+                  Gioca via streaming su dispositivi mobili, TV e browser grazie a
+                  Xbox Cloud Gaming incluso in Game Pass Ultimate.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div>© 2024 Project Box. Archivio indipendente dedicato al mondo Xbox.</div>
+          <div class="footer-links">
+            <a href="#timeline">Timeline</a>
+            <a href="#modelli">Modelli</a>
+            <a href="#features">Feature</a>
+          </div>
+        </div>
+      </footer>
+    </template>
+  </body>
+</html>
